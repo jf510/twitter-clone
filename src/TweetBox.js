@@ -6,13 +6,16 @@ import Avatar from "@mui/material/Avatar";
 function TweetBox() {
   return (
     <div className="tweetbox">
-      TweetBox
       <form>
-        <div className="tweetBox__input">
+        <div className="tweetbox__input">
           <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyD3Ogo63d0zlybYFL5o6Pgf11j3JZtpgaA&usqp=CAU" />
           <input placeholder="What's happening?"></input>
         </div>
-        <Button>Tweet</Button>
+        <input
+          className="tweetbox__imageInput"
+          placeholder="Add image url"
+        ></input>
+        <Button className="tweetbox__Button">Tweet</Button>
       </form>
     </div>
   );
