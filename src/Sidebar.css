@@ -1,3 +1,22 @@
+.sidebar {
+    border-right: 1px solid var(--twitter-color);
+    flex: 0.3;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidebar__twitterIcon {
+    color: var(--twitter-color);
+    font-size: 30px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+}
+
+
 .sidebar > .MuiSvgIcon-root {
     padding: 20px;
 }
