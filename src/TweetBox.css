@@ -21,6 +21,11 @@
     border: none;
 }
 
+.tweetbox__imageInput {
+    border: none;
+    padding: 10px;
+}
+
 .tweetbox__Button {
     background-color: var(--twitter-color) !important;
     border: none !important;
