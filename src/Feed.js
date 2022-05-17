@@ -11,7 +11,7 @@ function Feed() {
     db.collection("posts").onSnapshot((snapshot) =>
       setPosts(snapshot.docs.map((doc) => doc.data()))
     );
-  }, []);
+  }, []); 
 
   return (
     <div className="feed">
@@ -34,12 +34,6 @@ function Feed() {
           image={post.image}
         />
       ))}
-
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
     </div>
   );
 }
