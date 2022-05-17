@@ -10,14 +10,17 @@ import BookmarksIcon from "@mui/icons-material/Bookmarks";
 import ListIcon from "@mui/icons-material/List";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import FlutterDashIcon from "@mui/icons-material/FlutterDash";
 import Button from "@mui/material/Button";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       {/** Twitter icon */}
-      <TwitterIcon className="sidebar__twitterIcon" />
-
+      <div className="sidebar__header">
+        <FlutterDashIcon className="sidebar__twitterIcon" />
+        <h2>Warbler</h2>
+      </div>
       {/** Sidebar option */}
 
       <SidebarOption active Icon={HomeIcon} text="Home" />
@@ -31,7 +34,7 @@ function Sidebar() {
 
       {/** Sidebar button */}
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
-        Tweet
+        Quack
       </Button>
     </div>
   );
